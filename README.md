@@ -1,5 +1,7 @@
 # TLS protocol
 TLS protocol in [wiki](https://en.wikipedia.org/wiki/Transport_Layer_Security) <br>
+TLS1.0 [RFC2246](https://datatracker.ietf.org/doc/rfc2246/?include_text=1) <br>
+TLS1.1 [RFC4346](https://datatracker.ietf.org/doc/rfc4346/?include_text=1) <br>
 TLS1.2 [RFC5246](https://datatracker.ietf.org/doc/rfc5246/?include_text=1) <br>
 
 ## Attack
