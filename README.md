@@ -8,6 +8,40 @@ TLS1.3 [RFC8446](https://datatracker.ietf.org/doc/rfc8446/?include_text=1) <br>
 [RFC6125](https://datatracker.ietf.org/doc/rfc6125/?include_text=1) Representation and Verification of Domain-Based Application Service Identity within Internet Public Key Infrastructure Using X.509 (PKIX) Certificates in the Context of Transport Layer Security (TLS) <br>
 
 ## Cryptograph
+
+### Number Theory
+#### Greatest Common Divisor(gcd)
+Definition: A common divisor of two integers a and b is a positive integer d that divides both of them. <br>
+The greatest common divisor of a and b is, as its name suggests, the largest positive integer d such that d | a and d | b.<br> 
+The greatest common divisor of a and b is denoted gcd(a, b).<br>
+Example: gcd(748, 2024) = 44
+
+#### Division Algorithm
+Definition: Let a and b be positive integers. Then a divided by b has quotient q and remainder r means that <br>
+a = b * q + r (0 ≤ r < b) <br>
+In other words, the common divisors of a and b are the same as the common divisors of b and r <br>
+gcd(a, b) = gcd(b, r) <br>
+
+#### Euclidean Algorithm
+Let a and b be positive integers with a ≥ b. The following algorithm computes gcd(a, b) in a finite number of steps. <br>
+(1) Let r(0) = a and r(1) = b. <br>
+(2) Set i = 1. <br>
+(3) Divide r(i−1) by r(i) to get a quotient q(i) and remainder r(i+1), r(i−1) = r(i) * q(i) + r(i+1) with 0 ≤ r(i+1) < r(i). <br>
+(4) If the remainder r(i+1) = 0, then r(i) = gcd(a, b) and the algorithm terminates. <br>
+(5) Otherwise, r(i+1) > 0, so set i = i + 1 and go to Step 3. <br>
+Example:<br>
+2024 = 748 * 2 + 528 <br>
+748 = 528 * 1 + 220 <br>
+528 = 220 * 2 + 88 <br>
+220 = 88 * 2 + 44  <--  gcd = 44 <br>
+88 = 44 * 2 + 0 <br>
+
+#### Extended Euclidean Algorithm
+Let a and b be positive integers. Then the equation always has a solution in integers u and v <br>
+au + bv = gcd(a, b) <br>
+
+
+
 ### RSA
 PKCS#1 RSA Encryption Version 1.5 [RFC2313](https://datatracker.ietf.org/doc/rfc2313/?include_text=1) <br>
 
