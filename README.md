@@ -40,6 +40,13 @@ Example:<br>
 Let a and b be positive integers. Then the equation always has a solution in integers u and v <br>
 au + bv = gcd(a, b) <br>
 
+#### Relatively Prime
+Definition: Let a and b be integers, if gcd(a, b) = 1, We say that a and b are relatively prime <br>
+Any equation can be reduced to the case of relatively prime numbers by dividing both sides by gcd(A,B) <br>
+Au + Bv = gcd(A,B) <br>
+Au / gcd(A, B) + Bv / gcd(A, B) = 1 <br>
+Let a = A / gcd(A, B), b = B / gcd(A, B), then au + bv = 1, that a and b are relatively prime numbers. <br>
+
 
 
 ### RSA
